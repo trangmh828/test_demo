@@ -9,3 +9,7 @@ def tonghaiso(a = 5, b = 5)
     puts tong
 end
 
+tonghaiso
+
+puts 'trang test'
+
