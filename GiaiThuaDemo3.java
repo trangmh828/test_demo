@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class GiaiThuaDemo1 {
+public class GiaiThuaDemo3 {
     public static void main(String[] args) {
         // Giai thua bang cach nhap scanner
         Scanner scan = new Scanner(System.in);
@@ -8,15 +8,15 @@ public class GiaiThuaDemo1 {
             System.out.println("Please enter a value:");
             int n = scan.nextInt();
             int giaiThua = 1;
-            if (n == 0 || n == 1) {
-                System.out.println("n = 1");
-            } else if (n > 1) {
-                // Dung ham for de tinh giai thua
-                for (int i = 1; i <= n; i++) {
+            if (n >= 0) {
+                int i = 1;
+                // Dung ham while de tinh giai thua
+                while (i <= n) {
                     giaiThua *= i;
+                    i++;
                 }
                 System.out.println("Factorial of " + n + " is: " + giaiThua);
-            }  else {
+            } else {
                 System.out.println("Please enter valid number");
             }
         } catch (Exception e) {
