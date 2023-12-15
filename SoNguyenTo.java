@@ -1,21 +1,28 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class SoNguyenTo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Moi ban nhap so de kiem tra:");
-        int n = scanner.nextInt();
-        System.out.print("Ket qua: ");
-        if (isPrimeNumber(n)) {
-            System.out.println(n + " la so nguyen to.");
-        } else {
-            System.out.println(n + " khong la so nguyen to.");
+        try {
+            System.out.println("Please enter a value:");
+            int n = scanner.nextInt();
+            if (n > 0) {
+                if (laSoNguyenTo(n)) {
+                    System.out.println("This value is the prime");
+                } else {
+                    System.out.println("This value isn't the prime");
+                }
+            } else {
+                System.out.println("This value isn't the prime");
+            }
+        } catch (Exception e) {
+            System.out.println("Please enter a valid value");
         }
     }
 
-    public static boolean isPrimeNumber(int n) {
+    public static boolean laSoNguyenTo(int n){
         if (n < 2) {
-            return true;
+            return false;
         } else {
             for (int i = 2; i < Math.sqrt(n); i++) {
                 if (n % i == 0) {
@@ -24,5 +31,5 @@ public class SoNguyenTo {
             }
             return true;
         }
-    } 
+    }  
 }
