@@ -5,7 +5,7 @@ public class SoNguyenTo1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Moi ban nhap so:");
         int n = scanner.nextInt();
-        System.out.printf("%d so nguyen dau tien la: \n", n);
+        System.out.printf("%d so nguyen to dau tien la: \n", n);
         int dem = 0;
         int i = 2;
         while (dem < n) {
