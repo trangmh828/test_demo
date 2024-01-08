@@ -15,7 +15,7 @@ public class HashMap2 {
         newNumbers.put(4, "Four");
         System.out.println("New maps: " + newNumbers);
 
-/*        //using entrySet()
+        //using entrySet()
         System.out.println("Key/Value mapping: " + numbers.entrySet());
 
         //using keySet()
@@ -45,7 +45,7 @@ public class HashMap2 {
         System.out.println("Sau khi replace: " + numbersReplace.entrySet());
         numbersReplace.replaceAll((key, value) -> "after replace " + value);
         System.out.println("Sau khi replace all: " + numbersReplace.entrySet());
-*/
+
         //Using compute()
         HashMap<String, Integer> numbersCompute = new HashMap<>();
         numbersCompute.put("One", 1);
